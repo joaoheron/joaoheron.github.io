@@ -855,6 +855,124 @@ body {
     }
 }
 
+.education {
+    position: sticky;
+    display: flex;
+    width: 960px;
+    max-width: 80%;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto
+}
+
+@media (max-width: 1180px) {
+    .education {
+        max-width: 100%
+    }
+}
+
+.education h2 {
+    margin: 100px 0 20px 0;
+    font-size: 30px;
+    text-align: center
+}
+
+.education--lockup {
+    position: relative
+}
+
+.education--lockup .sliderEdu {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none
+}
+
+.education--lockup .sliderEdu--item--left {
+    position: absolute;
+    display: none;
+    text-align: center
+}
+
+.education--lockup .sliderEdu--item--left {
+    position: relative;
+    top: 30px;
+    left: 20%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block
+}
+
+.education--lockup .sliderEdu--item--left a {
+    text-decoration: none;
+    color: #fff
+}
+
+.education--lockup .sliderEdu--item--left .left-title {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.education--lockup .sliderEdu--item--left .left-description {
+    max-width: 250px;
+    margin: 0 auto
+}
+
+.education--lockup .sliderEdu--item--left .left-image {
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.education--lockup .sliderEdu--item--right {
+    position: absolute;
+    display: none;
+    text-align: center
+}
+
+.education--lockup .sliderEdu--item--right {
+    position: relative;
+    top: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block
+}
+
+.education--lockup .sliderEdu--item--right a {
+    text-decoration: none;
+    color: #fff
+}
+
+.education--lockup .sliderEdu--item--right .right-title {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.education--lockup .sliderEdu--item--right .right-description {
+    max-width: 250px;
+    margin: 0 auto
+}
+
+.education--lockup .sliderEdu--item--right .right-image {
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden
+}
+
 .work {
     position: relative;
     display: -webkit-box;
