@@ -856,7 +856,7 @@ body {
 }
 
 .education {
-    position: sticky;
+    position: relative;
     display: flex;
     width: 960px;
     max-width: 80%;
@@ -972,6 +972,206 @@ body {
     border-radius: 50%;
     overflow: hidden
 }
+
+.experience {
+    position: relative;
+    display: flex;
+    width: 960px;
+    max-width: 80%;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto
+}
+
+@media (max-width: 1180px) {
+    .experience {
+        max-width: 100%
+    }
+}
+
+.experience h2 {
+    margin: 100px 0 20px 0;
+    font-size: 30px;
+    text-align: center
+}
+
+.experience--lockup {
+    position: relative
+}
+
+.experience--lockup .sliderExp {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none
+}
+
+.experience--lockup .sliderExp--item--left {
+    position: absolute;
+    display: none;
+    text-align: center
+}
+
+.experience--lockup .sliderExp--item--left {
+    position: relative;
+    top: 30px;
+    left: 0%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block
+}
+
+.experience--lockup .sliderExp--item--left a {
+    text-decoration: none;
+    color: #fff
+}
+
+.experience--lockup .sliderExp--item--left .left-title {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.experience--lockup .sliderExp--item--left .left-description {
+    max-width: 250px;
+    margin: 0 auto
+}
+
+.experience--lockup .sliderExp--item--left .left-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.experience--lockup .sliderExp--item--center--left {
+    position: absolute;
+    display: none;
+    text-align: center
+}
+
+.experience--lockup .sliderExp--item--center--left {
+    position: relative;
+    top: 30px;
+    left: 10%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block
+}
+
+.experience--lockup .sliderExp--item--center--left a {
+    text-decoration: none;
+    color: #fff
+}
+
+.experience--lockup .sliderExp--item--center--left .left-title {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.experience--lockup .sliderExp--item--center--left .left-description {
+    max-width: 250px;
+    margin: 0 auto
+}
+
+.experience--lockup .sliderExp--item--center--left .left-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+
+.experience--lockup .sliderExp--item--center--right {
+    position: absolute;
+    display: none;
+    text-align: center
+}
+
+.experience--lockup .sliderExp--item--center--right {
+    position: relative;
+    top: 30px;
+    left: 20%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block
+}
+
+.experience--lockup .sliderExp--item--center--right a {
+    text-decoration: none;
+    color: #fff
+}
+
+.experience--lockup .sliderExp--item--center--right .right-title {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.experience--lockup .sliderExp--item--center--right .right-description {
+    max-width: 250px;
+    margin: 0 auto
+}
+
+.experience--lockup .sliderExp--item--center--right .right-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.experience--lockup .sliderExp--item--right {
+    position: absolute;
+    display: none;
+    text-align: center
+}
+
+.experience--lockup .sliderExp--item--right {
+    position: relative;
+    top: 30px;
+    left: 30%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block
+}
+
+.experience--lockup .sliderExp--item--right a {
+    text-decoration: none;
+    color: #fff
+}
+
+.experience--lockup .sliderExp--item--right .right-title {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.experience--lockup .sliderExp--item--right .right-description {
+    max-width: 250px;
+    margin: 0 auto
+}
+
+.experience--lockup .sliderExp--item--right .right-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden
+}
+
 
 .work {
     position: relative;
@@ -1175,6 +1375,9 @@ body {
         display: none
     }
 }
+
+/* qm me viu assim  @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@*/
+
 
 .about {
     position: relative;
@@ -1408,7 +1611,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/contact-visual.png");
+    /* background-image: url("../img/contact-visual.png"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat
@@ -1449,14 +1652,19 @@ body {
     }
 }
 
-.contact--lockup .modal {
+.modal {
+    align-self: center;
+    height: 180px;
+    width: 200px;
     padding: 45px 45px;
     text-align: center;
     background-color: #0c0c0c;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75)
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75);
+    border: 2px solid #fff;
+    cursor: pointer;
 }
 
-.contact--lockup .modal--information p, .contact--lockup .modal--information a {
+.modal--information p, .modal--information a {
     display: block;
     margin: 14px 0;
     text-decoration: none;
@@ -1464,36 +1672,36 @@ body {
     font-weight: 700
 }
 
-.contact--lockup .modal--information p {
+.modal--information p {
     margin-top: 0
 }
 
-.contact--lockup .modal--options {
+.modal--options {
     margin: 0;
     padding: 0;
     list-style: none
 }
 
-.contact--lockup .modal--options>li {
+.modal--options>li {
     width: 130px;
     margin: 0 auto 25px auto
 }
 
-.contact--lockup .modal--options li:nth-child(1) {
-    background-color: #1769ff
+.modal--options li:nth-child(1) {
+    background-color: #0f33ff
 }
 
-.contact--lockup .modal--options li:nth-child(2) {
-    background-color: #ea4c89
+.modal--options li:nth-child(2) {
+    background-color: #0f33ff
 }
 
-.contact--lockup .modal--options li:nth-child(3) {
+/* .modal--options li:nth-child(3) {
     margin-bottom: 0;
     background-color: #0f33ff;
     text-transform: uppercase
-}
+} */
 
-.contact--lockup .modal--options a {
+.modal--options a {
     display: block;
     width: 100%;
     padding: 8px 0;
